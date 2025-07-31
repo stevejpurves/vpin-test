@@ -1,0 +1,17 @@
+version: 1
+project:
+  title: Nucleus CDK Test with pinned packages (Python 3.12)
+  github: https://github.com/stevejpurves/vpin-test
+  id: 450c81cd-5a85-4708-addb-2f552d39ec89
+  jupyter: true
+  exports:
+    - format: meca
+  requirements:
+    - environment.yml
+site:
+  title: Nucleus CDK Test with pinned packages (Python 3.12)
+  nav: []
+  actions:
+    - title: Learn More
+      url: https://curvenote.com/docs/web
+  domains: []

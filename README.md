@@ -56,6 +56,6 @@ poetry run python -c "import cdk; print('Success!')"
 
 Each attempt can be tested on:
 - Public Binder: `https://mybinder.org`
-- CurveNote Binder: `https://binder.curvenote.com`
+- CurveNote Binder
 
 See `build-tracking.md` for detailed results and notes. 
