@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "nucleus-cdk-test-py312"
+name = "nucleus-cdk-test"
 version = "0.1.0"
-description = "Test environment for Nucleus CDK with Python 3.12 and version-pinned dependencies"
+description = "Test environment for Nucleus CDK with version-pinned dependencies"
 authors = ["Your Name <your.email@example.com>"]
 package-mode = false
 
@@ -28,9 +28,6 @@ tqdm = "4.67.1"
 # Visualization (from environment.yml)
 hvplot = "0.11.3"
 timple = "0.1.8"
-
-# Rich (from environment.yml) - adjusted for nucleus-cdk compatibility
-rich = ">=13.9.2,<14.0.0"
 
 # Nucleus CDK specific (from environment.yml pip section)
 nucleus-cdk = "0.3.0a1"
