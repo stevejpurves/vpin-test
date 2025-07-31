@@ -23,7 +23,7 @@ vpin-test/
 
 ### Attempt 2: Python 3.12.x (Current)
 - **Location**: Root directory (`environment.yml`)
-- **Status**: ⏳ Pending Binder tests
+- **Status**: ✅ Works on CurveNote Binder, ⏳ Public Binder pending
 - **Local**: ✅ Works with both Conda and Poetry
 - **Key Fix**: Resolved rich dependency conflict
 

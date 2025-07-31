@@ -4,10 +4,10 @@ This document tracks different build attempts with various environment configura
 
 ## Build Attempts
 
-| Attempt | Environment File | Python Version | Key Dependencies | Public Binder | CurveNote Binder | Local Conda | Local Poetry | Notes |
+| Attempt | Environment File | Python Version | Key Dependencies | Public Binder | Curvenote Binder | Local Conda | Local Poetry | Notes |
 |---------|------------------|----------------|------------------|----------------|------------------|-------------|--------------|-------|
 | 1 | `trys/environment-py3.13-public-fail/environment.yml` | 3.13.5 | nucleus-cdk=0.3.0a1, numpy=2.3.1, scipy=1.16.0 | ❌ Failed | ❌ Failed | ✅ Success | ✅ Success | Python 3.13 too new for Binder |
-| 2 | `environment.yml` | 3.12.x | nucleus-cdk=0.3.0a1, numpy=2.3.1, scipy=1.16.0 | ⏳ Pending | ⏳ Pending | ✅ Success | ✅ Success | Python 3.12 should work on Binder |
+| 2 | `environment.yml` | 3.12.x | nucleus-cdk=0.3.0a1, numpy=2.3.1, scipy=1.16.0 | ⏳ Pending | ✅ Success | ✅ Success | ✅ Success | Python 3.12 works on Curvenote Binder |
 | 3 | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
 
 ## Environment Details
@@ -32,11 +32,12 @@ This document tracks different build attempts with various environment configura
 - ✅ **Local Conda**: Built successfully
 - ✅ **Local Poetry**: Built successfully  
 - ⏳ **Public Binder**: Pending test
-- ⏳ **CurveNote Binder**: Pending test
+- ✅ **Curvenote Binder**: Built successfully
 
 **Issues Identified**:
 - Rich dependency conflict resolved by adjusting version constraint
-- Python 3.12 should be compatible with Binder infrastructure
+- Python 3.12 is compatible with Curvenote Binder infrastructure
+- Public Binder test still pending
 
 ### Attempt 1: Python 3.13.5
 - **File**: `trys/environment-py3.13-public-fail/environment.yml`
@@ -57,7 +58,7 @@ This document tracks different build attempts with various environment configura
 - ✅ **Local Conda**: Built successfully
 - ✅ **Local Poetry**: Built successfully  
 - ❌ **Public Binder**: Failed (likely Python 3.13 too new)
-- ❌ **CurveNote Binder**: Failed (likely Python 3.13 too new)
+- ❌ **Curvenote Binder**: Failed (likely Python 3.13 too new)
 
 **Issues Identified**:
 - Python 3.13.5 is too recent for Binder infrastructure
@@ -72,6 +73,6 @@ This document tracks different build attempts with various environment configura
 ## Binder Infrastructure Notes
 
 - Public Binder typically supports Python 3.8-3.11
-- CurveNote Binder may have similar limitations
+- Curvenote Binder may have similar limitations
 - Local builds work because they use current Python versions
 - Need to balance between latest features and Binder compatibility 
